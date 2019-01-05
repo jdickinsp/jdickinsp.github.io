@@ -70,7 +70,6 @@ pub fn find_max_path(graph: &str) -> i128 {
     // generate adjacency list of graph
     let mut adjlist: AdjListPos = HashMap::new();
     let mut maxvalues: HashMap<(usize, usize), i128> = HashMap::new();
-    let mut maxpaths: HashMap<(usize, usize), (usize, usize)> = HashMap::new();
     for (i, row) in list.iter().enumerate().rev() {
         for (j, value) in row.iter().enumerate() {
             let pos = (i, j);
