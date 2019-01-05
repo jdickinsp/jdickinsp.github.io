@@ -29,7 +29,8 @@ graph[1] = []
 However, since each number in the triangle could be non unique, the position is used instead to identity the node in the graph.
 So the graph becomes an adjacency list of tuple positions x and y.
 ```
-graph[(2, 0)] = [(1, 0), (1, 1)]
+graph[(2, 0)] = [(1, 0)]
+graph[(2, 1)] = [(1, 0), (1, 1)]
 ```
 
 Since we want to find the previous max value from the node's neighbors, we reverse the edges in the graph, so the inner edges become outer edges.
